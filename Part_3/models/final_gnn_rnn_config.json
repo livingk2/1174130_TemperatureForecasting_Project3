@@ -1,0 +1,62 @@
+{
+  "configuration": "C: T→S, 2 layers, σ=mean",
+  "processing_order": "T->S",
+  "graph_layers": 2,
+  "edge_weights": "Gaussian kernel exp(-(d/sigma)^2), row-normalised, no self-loops",
+  "sigma_km": 78.03227253546832,
+  "adjacency": [
+    [
+      0.0,
+      0.401527,
+      0.161881,
+      0.381005,
+      0.055587
+    ],
+    [
+      0.410945,
+      0.0,
+      0.156755,
+      0.381263,
+      0.051037
+    ],
+    [
+      0.384852,
+      0.364124,
+      0.0,
+      0.24464,
+      0.006384
+    ],
+    [
+      0.396462,
+      0.387638,
+      0.107078,
+      0.0,
+      0.108822
+    ],
+    [
+      0.261315,
+      0.23443,
+      0.012624,
+      0.491631,
+      0.0
+    ]
+  ],
+  "stations": [
+    "Christchurch Aero",
+    "Chch Kyle Street",
+    "Ashburton Aero",
+    "Rangiora",
+    "Hanmer Forest"
+  ],
+  "recurrent_cell": "GRU",
+  "window_days": 60,
+  "hidden_size": 64,
+  "rnn_layers": 2,
+  "dropout": 0.2,
+  "batch_size": 64,
+  "learning_rate": 0.001,
+  "patience": 10,
+  "seed": 0,
+  "scaling": "per-station StandardScaler from Part_1/models/feature_scalers.joblib",
+  "validation_RMSE_mean_C": 3.1377497287379064
+}
