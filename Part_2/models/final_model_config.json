@@ -1,0 +1,23 @@
+{
+  "source_station": "Christchurch Aero",
+  "cell_type": "GRU",
+  "window_days": 60,
+  "seed": 1,
+  "hidden_size": 64,
+  "num_layers": 2,
+  "dropout": 0.2,
+  "features": [
+    "evap_penman_ow",
+    "evap_penman_pet",
+    "evap_pt_pet",
+    "max_temp",
+    "min_temp",
+    "mean_temp",
+    "wind_speed",
+    "rainfall"
+  ],
+  "target": "mean_temp",
+  "horizon_days": 7,
+  "scaler": "Part_1/models/feature_scalers.joblib (Christchurch Aero, training period)",
+  "validation_RMSE_C": 3.1037491412793967
+}
