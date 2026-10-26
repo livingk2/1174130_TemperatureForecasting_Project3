@@ -1,4 +1,4 @@
-# COMP661 Assignment 3  Assignment 3 - Building an AI-Powered Temperature Forecaster for Canterbury Region
+# COMP661 Assignment 3  Assignment 3 - Building an AI-Powered Temperature Forecaster for the Canterbury Region
 
 **1174130 Ken Livingston**
 
